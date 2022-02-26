@@ -1,0 +1,378 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    z-index: 99999;
+    position: fixed;
+    background: #f00cc6;
+    width: calc(100% - 0%);
+    top: 0;
+    height: 65px;
+}
+.left_area h3 {
+    color: #fff;
+    margin-top: -5px;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 20px;
+}
+.left_area span {
+    color: #240c1f;
+}
+.right_area {
+    text-decoration: none;
+    float: right;
+    margin-top: -60px;
+    margin-right: 40px;
+    font-size: 25px;
+    color: #240c1f;
+    transition: 0.5s;
+    transition-property: background;
+    z-index: 999999;
+}
+.right_area :hover {
+    color: #fff;
+}
+.sidebar {
+    z-index: 1;
+    top: 0;
+    background: #f90acd;
+    margin-top: 50px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 270px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+    overflow-y: auto;
+}
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar .profile_info .profile_image {
+    height: 180px;
+}
+.sidebar .profile_info h4 {
+    color: #240c1f;
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+.sidebar a {
+    color: #240c1f;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+    font-size: 20px;
+    font-weight: 550px;
+}
+.sidebar a:hover {
+    font-weight: bold;
+    color: #fff;
+}
+.sidebar i {
+    padding-right: 10px;
+}
+label #sidebar_btn {
+    z-index: 1;
+    color: #240c1f;
+    position: fixed;
+    cursor: pointer;
+    left: 300px;
+    top: 23px;
+    font-size: 25px;
+    transition: 0.5s;
+    transition-property: color;
+}
+label #sidebar_btn:hover {
+    color: #fff;
+}
+
+/* Bagian Content */
+.content {
+    margin: 0 auto;
+    margin-top: 60px;
+    padding: 25px;
+    margin-left: 270px;
+    background-position: center;
+    background-size: cover;
+    height: 350vh;
+    transition: 0.5s;
+}
+input,
+button {
+    font-size: 16px;
+}
+.input_section {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+}
+.input_section > h2 {
+    text-align: center;
+    color: #240c1f;
+}
+.input_section > form > .input {
+    margin: 8px 0;
+}
+.input_section > form > button {
+    background-color: #f00cc6;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+.input_section > form > button > span {
+    font-weight: bold;
+}
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+.input_section > form > .input > label {
+    color: #240c1f;
+    font-weight: bold;
+}
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+.input_section > form > .input_inline > label {
+    color: #240c1f;
+    font-weight: bold;
+    margin-right: 10px;
+}
+/* Bagian Search */
+.search_sec {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    max-width: 800px;
+}
+.search_sec > h2 {
+    color: #240c1f;
+}
+.input_search {
+    padding: 7px 15px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.button_search {
+    position: relative;
+    padding: 7px 15px;
+    left: -2px;
+    background-color: #f00cc6;
+    color: #fff;
+    border-radius: 5px;
+}
+.button_search:hover {
+    background-color: #fff;
+    color: #240c1f;
+    font-weight: bold;
+}
+/* Bagian Rak  */
+.book_shelf {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+}
+
+.book_shelf > h2 {
+    color: #240c1f;
+    text-align: center;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3,
+p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .undo {
+    background-color: darkgreen;
+    color: white;
+}
+.book_shelf > .book_list > .book_item > .action > .redo {
+    background-color: darkgreen;
+    color: white;
+}
+.book_shelf > .book_list > .book_item > .action > .delete_book {
+    background-color: darkred;
+    color: white;
+}
+.book_shelf > .book_list > .book_item > .action > .edit_book {
+    background-color: yellow;
+    color: white;
+}
+/* Styling Modal */
+.modal {
+    display: none;
+    position: fixed;
+    padding: 0 auto;
+    padding-top: 200px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.modal p {
+    font-size: 20px;
+    color: black;
+}
+.modal_content {
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+}
+.modal button {
+    border: 0;
+    padding: 5px;
+    margin: 0 0 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal .modal_content .validation {
+    background-color: darkgreen;
+    color: #fff;
+}
+.modal .modal_content .cencel_delete {
+    background-color: darkred;
+    color: #fff;
+}
+
+/* Styling Modal Edit */
+#edit_book {
+    padding-top: 100px;
+}
+.edit_content {
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80%;
+}
+.modal .edit_content .validation {
+    background-color: darkgreen;
+    color: #fff;
+}
+.modal .edit_content .cencel_delete {
+    background-color: darkred;
+    color: #fff;
+}
+/* ------ */
+.mobile_nav {
+    display: none;
+}
+/* Mobile responsive menggunakan Media queries*/
+@media screen and (max-width: 768px) {
+    .right_area {
+        margin-right: 15px;
+    }
+    .left_area h3 {
+        margin-bottom: 10px;
+    }
+    .sidebar {
+        display: none;
+    }
+    #sidebar_btn {
+        display: none;
+    }
+    .content {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 120px 20px;
+    }
+    .mobile_nav {
+        display: block;
+        width: calc(100% - 0%);
+    }
+    .nav_bar {
+        background: #f90acd;
+        margin-top: -50px;
+        width: 100%;
+        align-items: center;
+        padding: 0 20px;
+        margin-right: 15px;
+    }
+    .nav_bar a span {
+        font-size: 15px;
+        margin-right: 5px;
+        color: #240c1f;
+    }
+    .nav_bar a {
+        text-decoration: none;
+        color: #240c1f;
+    }
+    .nav_bar a:hover {
+        color: #fff;
+    }
+    .nav_bar a span:hover {
+        color: #fff;
+    }
+    .input_search {
+        padding: 5px 10px;
+    }
+    .button_search {
+        padding: 5px 10px;
+    }
+}

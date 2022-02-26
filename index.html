@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookshelf Apps | aanevian</title>
+        <link rel="icon" href="assets/img/books2.svg" />
+        <link rel="stylesheet" href="assets/style/style.css" />
+        <!-- Icon Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    </head>
+    <body>
+        <!--header area start-->
+        <header>
+            <label for="check">
+                <i class="fas fa-bars" id="sidebar_btn"></i>
+            </label>
+            <div class="left_area">
+                <h3>Bookshelf <span>Apps</span></h3>
+            </div>
+            <div class="right_area">
+                <i class="fas fa-user"></i>
+            </div>
+            <!--mobile navigation bar start-->
+            <div class="mobile_nav">
+                <div class="nav_bar">
+                    <img src="assets/img/books1.svg" class="mobile_profile_image" alt="logo" />
+                    <div class="menu_nav_bar">
+                        <a href="#tambah"><i class="fas fa-plus-circle first"></i><span>Tambah</span></a>
+                        <a href="#cari"><i class="fas fa-search"></i><span>Cari</span></a>
+                        <a href="#edit"><i class="fas fa-edit"></i><span>Edit</span></a>
+                    </div>
+                </div>
+            </div>
+            <!--mobile navigation bar end-->
+        </header>
+        <!--header area end-->
+
+        <main>
+            <!--sidebar start-->
+            <div class="sidebar">
+                <div class="profile_info">
+                    <img src="assets/img/books1.svg" class="profile_image" alt="logo" />
+                    <h4>aanevian</h4>
+                </div>
+                <a href="#tambah"><i class="fas fa-plus-circle"></i>Tambah Buku</a>
+                <a href="#cari"><i class="fas fa-search"></i>Cari Buku</a>
+                <a href="#edit"><i class="fas fa-edit"></i>Edit Buku</a>
+            </div>
+            <!--sidebar end-->
+            <!-- Bagian Content -->
+            <div class="content">
+                <section class="input_section" id="tambah">
+                    <h2>Tambah Buku</h2>
+                    <form id="inputBook">
+                        <div class="input">
+                            <label for="inputBookTitle">Judul</label>
+                            <input id="inputBookTitle" type="text" placeholder="Masukan judul buku..." required />
+                        </div>
+                        <div class="input">
+                            <label for="inputBookAuthor">Penulis</label>
+                            <input id="inputBookAuthor" type="text" placeholder="Masukan penulis buku..." required />
+                        </div>
+                        <div class="input">
+                            <label for="inputBookYear">Tahun</label>
+                            <input id="inputBookYear" type="number" placeholder="Masukan tahun buku..." required />
+                        </div>
+                        <div class="input_inline">
+                            <label for="inputBookIsComplete">Selesai dibaca</label>
+                            <input id="inputBookIsComplete" type="checkbox" />
+                        </div>
+                        <button id="bookSubmit" type="submit">Tambah ke rak <span>Belum selesai dibaca</span></button>
+                    </form>
+                </section>
+                <!-- Kolom Search -->
+                <section class="search_sec" id="cari">
+                    <h2>Cari Buku</h2>
+                    <form>
+                        <input class="input_search" id="input_search" type="text" placeholder="Judul buku..." required />
+                        <button class="button_search" id="search_title" type="submit">Cari</button>
+                    </form>
+                </section>
+                <!-- Rak belum dibaca -->
+                <section class="book_shelf" id="edit">
+                    <h2>Rak Belum dibaca</h2>
+                    <div id="incompleteBookshelfList" class="book_list">
+                        <!-- Book List -->
+                    </div>
+                </section>
+                <!-- End Rak belum dibaca -->
+                <!-- Rak sudah dibaca -->
+                <section class="book_shelf">
+                    <h2>Rak Selesai dibaca</h2>
+                    <div id="completeBookshelfList" class="book_list">
+                        <!-- Book List -->
+                    </div>
+                </section>
+                <!-- End Rak Sudah dibaca -->
+                <!-- Modal -->
+                <div class="modal" id="modal_button">
+                    <div class="modal_content">
+                        <p>Yakin ingin Menghapus Data!!!</p>
+                        <button class="validation">OK</button>
+                        <button class="cencel_delete">Batal</button>
+                    </div>
+                </div>
+                <!-- End Modal -->
+                <!-- Edit Buku -->
+                <div class="modal" id="edit_book">
+                    <div class="edit_content">
+                        <section class="input_section">
+                            <h2>Edit Buku</h2>
+                            <form id="inputNewBook">
+                                <div class="input">
+                                    <label for="inputBookTitle">Judul</label>
+                                    <input id="inputNewBookTitle" type="text" placeholder="Masukan judul baru..." required />
+                                </div>
+                                <div class="input">
+                                    <label for="inputBookAuthor">Penulis</label>
+                                    <input id="inputNewBookAuthor" type="text" placeholder="Masukan penulis baru..." required />
+                                </div>
+                                <div class="input">
+                                    <label for="inputBookYear">Tahun</label>
+                                    <input id="inputNewBookYear" type="number" placeholder="Masukan tahun baru..." required />
+                                </div>
+                                <div class="input_inline">
+                                    <label for="inputBookIsComplete">Selesai dibaca</label>
+                                    <input id="inputNewBookIsComplete" type="checkbox" />
+                                </div>
+                                <button id="bookSubmitNew" type="submit">Perbarui data<span>Buku</span></button>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+                <!-- End -->
+            </div>
+            <!-- End Content -->
+        </main>
+
+        <!-- Connect to JavaScript -->
+        <script src="assets/script/script.js" type="text/javascript"></script>
+    </body>
+</html>
